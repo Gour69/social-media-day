@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socializing Social Media & Branding - IEEE UoM</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 50px;
+            box-shadow: 0 20px 60px rgba(255, 0, 128, 0.3);
+            border: 2px solid rgba(255, 0, 128, 0.2);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .event-date {
+            font-size: 3em;
+            font-weight: bold;
+            color: #ff0080;
+            text-shadow: 0 0 20px rgba(255, 0, 128, 0.5);
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .event-title {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+
+        .event-subtitle {
+            font-size: 1.3em;
+            color: #cccccc;
+            margin-bottom: 30px;
+        }
+
+        .talks-section {
+            margin: 40px 0;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 15px;
+            border-left: 4px solid #ff0080;
+        }
+
+        .talks-section h2 {
+            color: #ff0080;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .talk-item {
+            margin: 15px 0;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .talk-item:hover {
+            background: rgba(255, 0, 128, 0.1);
+            transform: translateX(10px);
+        }
+
+        .talk-number {
+            color: #ff0080;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .main-talk {
+            background: rgba(255, 0, 128, 0.15);
+            border: 2px solid #ff0080;
+            font-weight: bold;
+        }
+
+        .info-section {
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .location {
+            font-size: 1.3em;
+            margin: 20px 0;
+            color: #ffffff;
+        }
+
+        .location-icon {
+            color: #ff0080;
+            margin-right: 10px;
+        }
+
+        .register-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #ff0080 0%, #ff3399 100%);
+            color: white;
+            padding: 20px 60px;
+            font-size: 1.3em;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(255, 0, 128, 0.4);
+            margin: 30px 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .register-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(255, 0, 128, 0.6);
+            background: linear-gradient(135deg, #ff3399 0%, #ff0080 100%);
+        }
+
+        .organizers {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .organizer-logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 15px 30px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+
+        .ieee-logo {
+            color: #ffffff;
+        }
+
+        .infinity-logo {
+            color: #0099ff;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            .event-title {
+                font-size: 1.8em;
+            }
+
+            .event-date {
+                font-size: 2em;
+            }
+
+            .register-btn {
+                padding: 15px 40px;
+                font-size: 1.1em;
+            }
+
+            .organizers {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="event-date">ΠΑΡ 29.05 | 16:00</div>
+            <h1 class="event-title">Socializing<br>Social Media<br>& Branding: No filter.</h1>
+            <p class="event-subtitle">Μια ημερίδα για social media, branding & personal development</p>
+        </div>
+
+        <div class="talks-section">
+            <h2>📋 Το Πρόγραμμα</h2>
+            
+            <div class="talk-item">
+                <span class="talk-number">Talk 1:</span>
+                How to make the most out of your uni experience
+            </div>
+
+            <div class="talk-item">
+                <span class="talk-number">Talk 2:</span>
+                Living in the social era: introduction to social media
+            </div>
+
+            <div class="talk-item main-talk">
+                <span class="talk-number">Main Talk:</span>
+                How to build your personal brand
+            </div>
+
+            <div class="talk-item">
+                <span class="talk-number">Talk 4:</span>
+                Being a Social Media Manager: the hard truth
+            </div>
+        </div>
+
+        <div class="info-section">
+            <div class="location">
+                <span class="location-icon">📍</span>
+                Conference Room, Πανεπιστήμιο Μακεδονίας
+            </div>
+
+            <p style="margin: 20px 0; line-height: 1.8; color: #cccccc;">
+                Έλα να ανακαλύψεις πώς να χτίσεις το προσωπικό σου brand, να αξιοποιήσεις 
+                τα social media και να κάνεις τη διαφορά στην πανεπιστημιακή σου ζωή!
+            </p>
+
+            <a href="https://docs.google.com/forms/u/2/d/e/1FAIpQLSfad2kGboOm3tLmFzXb5ASsIE1CzkKcHNkHHJwEsJnMlcf0wQ/viewform?usp=send_form" 
+               class="register-btn" 
+               target="_blank">
+                Εγγραφή Τώρα
+            </a>
+
+            <p style="margin-top: 20px; color: #999; font-size: 0.9em;">
+                Οι θέσεις είναι περιορισμένες - Κάνε την εγγραφή σου σήμερα!
+            </p>
+        </div>
+
+        <div class="organizers">
+            <div class="organizer-logo ieee-logo">IEEE</div>
+            <div style="color: #666; font-size: 2em;">×</div>
+            <div class="organizer-logo infinity-logo">InfinityGreece</div>
+        </div>
+    </div>
+</body>
+</html>
